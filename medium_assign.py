@@ -13,7 +13,14 @@ DO NOT EDIT THE FUNCTION NAMES.
 
 '''
 
+
 def expression_1(x):
+    
+    
+    value = x**3 - (2 * x + x**2 - 100)
+    return value
+
+
 
     '''
     
@@ -21,22 +28,34 @@ def expression_1(x):
     
     '''
 
-    pass
+    
 
 def expression_2(x, y):
+
+    value = int((x**4) / 2 * y - (3 * x * y) + ((6 * y) / (7 * x)))
+    return value 
 
     '''
         Write code that returns only the integer value of the following expression: (x^4 / 2y) - (3xy) + (6y / 7x)
     '''
 
-    pass
+   
 
 
 def expression_3(x, y):
+    
+    value = (x**3 + y**2) / (x**2 - y**3)
+    return value
+
     '''
         Write code that returns the value of the following expression: (x^3 + y^2) / (x^2 - y^3)
     '''
 
+
 if __name__ == "__main__":
+
+    x = float(input("Enter The Value of x: "))
+    y = float(input("Enter The Value of y: "))
+    result= expression_1(x), expression_2(x, y), expression_3(x, y)
+    print(result)
     
-    pass
